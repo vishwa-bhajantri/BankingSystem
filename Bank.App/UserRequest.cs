@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bank.Controllers;
+using Bank.Repos;
+using Bank.Services;
 
 namespace Bank.App
 {
@@ -12,7 +14,12 @@ namespace Bank.App
         static void Main(string[] args)
         {
             string accountNum = "HDFC123";
-            AccountController accountController = new AccountController();
+
+            IAccountRepository accountRepository = new AccountRepository();
+            IAccountService accountService = new AccountService(accountRepository);
+            
+
+            AccountController accountController = new AccountController(accountService);
             string userBalance = accountController.GetBalance(accountNum);
             Console.WriteLine(userBalance);
         }

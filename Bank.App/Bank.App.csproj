@@ -57,6 +57,14 @@
       <Project>{a45ad07a-1ede-4317-b3e9-b1355654d549}</Project>
       <Name>Bank.Controllers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Bank.Repos\Bank.Repos.csproj">
+      <Project>{79a2262d-49ba-47b0-988f-1429e7e7a784}</Project>
+      <Name>Bank.Repos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bank.Services\Bank.Services.csproj">
+      <Project>{9a0f7cbd-01b6-4fb5-bdc5-766e2b92ed51}</Project>
+      <Name>Bank.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

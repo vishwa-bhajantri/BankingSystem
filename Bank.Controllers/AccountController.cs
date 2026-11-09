@@ -9,16 +9,15 @@ namespace Bank.Controllers
 {
     public class AccountController
     {
-        IAccountService accountService;
-        public AccountController()
+        IAccountService _accountService;
+        public AccountController(IAccountService accountService)
         {
-            accountService = new AccountService();
+            _accountService = accountService;
         }
         public string GetBalance(string AccountNum)
         {
             //AccountService accountService = new AccountService();
-            return accountService.GetBalance(AccountNum);
-
+            return _accountService.GetBalance(AccountNum);
         }
     }
 }
