@@ -15,5 +15,11 @@ namespace Bank.Services
             string msg = accountRepository.GetBalance(AccountNumber);
             return msg;
         }
+
+        public void Deposit(double Amount)
+        {
+            AccountRepository accountRepository = new AccountRepository();
+            accountRepository.Deposit(Amount);
+        }
     }
 }
