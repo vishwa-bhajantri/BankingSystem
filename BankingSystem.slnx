@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="Bank.App/Bank.App.csproj" />
-  <Project Path="Bank.Controllers/Bank.Controllers.csproj" />
-  <Project Path="Bank.Repos/Bank.Repos.csproj" />
-  <Project Path="Bank.Services/Bank.Services.csproj" />
+  <Project Path="Bank.App/Bank.App.csproj" Id="bf6748a1-8c4a-40dc-97a4-c1fcc0984ee7" />
+  <Project Path="Bank.Controllers/Bank.Controllers.csproj" Id="a45ad07a-1ede-4317-b3e9-b1355654d549" />
+  <Project Path="Bank.Repos/Bank.Repos.csproj" Id="79a2262d-49ba-47b0-988f-1429e7e7a784" />
+  <Project Path="Bank.Services/Bank.Services.csproj" Id="9a0f7cbd-01b6-4fb5-bdc5-766e2b92ed51" />
 </Solution>

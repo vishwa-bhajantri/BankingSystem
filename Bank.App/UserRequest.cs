@@ -11,7 +11,7 @@ namespace Bank.App
     {
         static void Main(string[] args)
         {
-            string accountNum = "SBIC123";
+            string accountNum = "HDFC123";
             AccountController accountController = new AccountController();
             string userBalance = accountController.GetBalance(accountNum);
             Console.WriteLine(userBalance);

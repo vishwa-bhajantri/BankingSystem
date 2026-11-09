@@ -9,16 +9,22 @@ namespace Bank.Services
 {
     public class AccountService
     {
+        AccountRepository accountRepository;
+
+        public AccountService()
+        {
+            accountRepository = new AccountRepository();
+        }
         public string GetBalance(string AccountNumber)
         {
-            AccountRepository accountRepository = new AccountRepository();
+            //AccountRepository accountRepository = new AccountRepository();
             string msg = accountRepository.GetBalance(AccountNumber);
             return msg;
         }
 
         public void Deposit(double Amount)
         {
-            AccountRepository accountRepository = new AccountRepository();
+            //AccountRepository accountRepository = new AccountRepository();
             accountRepository.Deposit(Amount);
         }
     }
