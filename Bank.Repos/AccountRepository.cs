@@ -1,6 +1,6 @@
 ﻿namespace Bank.Repos
 {
-    public class AccountRepository
+    public class AccountRepository : IAccountRepository
     {
         string _AccountNumber = "HDFC123";
         public string GetBalance(string AccountNumber)
@@ -15,9 +15,9 @@
             }
         }
 
-        public string Deposit(double Amount)
-        {
-            return $"You Have Deposited ${Amount}";
-        }
+        //public string Deposit(double Amount)
+        //{
+        //    return $"You Have Deposited ${Amount}";
+        //}
     }
 }

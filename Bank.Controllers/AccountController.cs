@@ -9,7 +9,7 @@ namespace Bank.Controllers
 {
     public class AccountController
     {
-        AccountService accountService;
+        IAccountService accountService;
         public AccountController()
         {
             accountService = new AccountService();

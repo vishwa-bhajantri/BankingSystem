@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Bank.Services
 {
-    public class AccountService
+    public class AccountService : IAccountService
     {
-        AccountRepository accountRepository;
+        IAccountRepository accountRepository;
 
         public AccountService()
         {
@@ -22,10 +22,10 @@ namespace Bank.Services
             return msg;
         }
 
-        public void Deposit(double Amount)
-        {
-            //AccountRepository accountRepository = new AccountRepository();
-            accountRepository.Deposit(Amount);
-        }
+        //public void Deposit(double Amount)
+        //{
+        //    //AccountRepository accountRepository = new AccountRepository();
+        //    accountRepository.Deposit(Amount);
+        //}
     }
 }
