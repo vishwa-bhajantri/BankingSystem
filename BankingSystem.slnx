@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Bank.App/Bank.App.csproj" />
+  <Project Path="Bank.Controllers/Bank.Controllers.csproj" />
+  <Project Path="Bank.Repos/Bank.Repos.csproj" />
+  <Project Path="Bank.Services/Bank.Services.csproj" />
+</Solution>
